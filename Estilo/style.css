@@ -65,14 +65,18 @@ header a:hover{background-color: var(--cor3); color: var(--cor1); border-radius:
 .section2 h1 {font-family: 'meaw'; color: var(--cor5); font-size: 3em; font-weight: normal; text-shadow: 1px 1px rgba(0, 0, 0, 0.200); width: 200px; text-align: center;}
 .section2 p {font-size: 1em; width: 200px; text-align: center;}
 .section2 button {color: var(--cor4); background-color: var(--cor1); margin-top: 20px; width: 100px; height: 40px; border: #F54F29; cursor: pointer; border-radius: 5px; text-transform: uppercase; box-shadow: 15px 15px rgba(0, 0, 0, 0.200);}
-.section2 img{background-clip: content-box; background-size: cover; background-position: center; width: 250px; border-radius: 5px; border: 1px solid #F54F29; box-shadow: 25px 25px rgba(0, 0, 0, 0.200);}
+.section2--imagens{display: flex; flex-direction: row;}
+.section2 img{width: 250px; border-radius: 5px; border: 1px solid #F54F29; box-shadow: 25px 25px rgba(0, 0, 0, 0.200); margin-left: 50px;}
+.section2 img:first-child{margin-left: 0px;}
 
 @media screen and (max-width:500px){
-    .section2 {display: flex; justify-content: space-evenly;}
-    .section2 h1{font-size: 2.5em;}
-    .section2 button{margin: 0px; margin: 10px 10px; box-shadow: 5px 5px rgba(0, 0, 0, 0.200);}
-    .section2 img{box-shadow: 15px 15px rgba(0, 0, 0, 0.200); margin: auto; width: 80px; height: 150px; display: flex; flex-direction: column; justify-content: center;}
+    .section2{display: flex; flex-direction: column;}
+    .section2 button{box-shadow: 8px 8px rgba(0, 0, 0, 0.200);}
+    .section2--imagens{justify-content: center; flex-direction: column; gap: 10px; padding-top: 30px;}
+    .section2 img{box-shadow: 15px 15px rgba(0, 0, 0, 0.200);}
 }
+
+
 
 /*SECTIONGATIHO*/
 .sectiongatinho h2{font-family: 'gatinho'; font-size: 3em; color: var(--cor4); font-weight: normal; text-align: center; padding: 20px; height: 50px;}
